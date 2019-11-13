@@ -13,10 +13,10 @@
 \input{config/custom-command}
 \usepackage{verbatim}
 % Information
-\title{Hopefully something mildly interesting}
+\title{FORCE2019 Conference}
 \author{Simon Fowler}
 \institute{University of Edinburgh}
-\date{12th March 2019}
+\date{14th November 2019}
 
 \begin{document}
 
@@ -36,12 +36,179 @@ $
 \end{frame}
 
 
-\begin{frame}{A sample frame}
+\begin{frame}{Force11}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{images/force11.png}
+  \end{center}
+  \only<1>{
+    \begin{center}
+    ``FORCE11 is a community of scholars, librarians, archivists, publishers and research funders that has arisen organically to help facilitate the change toward improved knowledge creation and sharing.
+    Individually and collectively, we \emph{aim to bring about a change in modern scholarly communications through the effective use of information technology}.''
+    \end{center}
+    }
+    \only<2>{
   \begin{fullpageitemize}
-    \item Beamer is cool if people can't tell you're using Beamer
+    \item Scholarly research outputs? Traditionally publications.
+    \item But there's much more to it:
+      \begin{itemize}
+        \itemR Software, metadata, semantic linking\ldots
+      \end{itemize}
+    \item People don't read / order print journals anymore; why are online publications the same as print journals?
+  \end{fullpageitemize}
+  }
+\end{frame}
+
+\begin{frame}{FORCE2019}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{images/force2019.png}
+  \end{center}
+
+  \begin{fullpageitemize}
+  \item My take on FORCE conferences: ``The ICFP of the scholarly communications community''
+  \item This one was in Edinburgh! So I went. \textasciitilde 200-300 attendees, held at Murrayfield conference centre
+    \begin{itemize}
+      \itemR (aside: it was \emph{cold})
+    \end{itemize}
+  \item Remainder of this talk: some interesting talks, and my takeaways
   \end{fullpageitemize}
 \end{frame}
 
-\framecard{{\color{white}\bigtext{A section separator}}}
+\framecard{{\color{white}\bigtext{3 Interesting Talks}}}
+
+\begin{frame}{Perpetual access machines: archiving web-published scholarship at scale \\ {\small Jefferson Bailey and Bryan Newbold}}
+  \begin{center}
+    \includegraphics[width=0.2\textwidth]{images/internet-archive.png}
+  \end{center}
+
+  \begin{fullpageitemize}
+    \item Internet Archive (\url{http://www.archive.org}): Keeps snapshots of web content
+    \item \textbf{Idea:} Use this for scholarly output, too
+      \begin{itemize}
+        \itemR ``At risk'' scholarship, especially non-English-language
+        \itemR Crawls, gathers metadata, checks whether PDFs are scholarly outputs
+        \itemR Prioritises informally published works (we hope DL will be around for a while!)
+      \end{itemize}
+  \end{fullpageitemize}
+\end{frame}
+
+\begin{frame}{Transparent peer review: a collaborative approach to opening and building the scholarly record \\ {\small Laura Simonite}}
+  \begin{center}
+    \includegraphics[width=0.35\textwidth]{images/Publons_logo.png}
+  \end{center}
+
+  \begin{fullpageitemize}
+    \item Peer review works out in the end, but often problematic
+      \begin{itemize}
+        \itemR Reviewer 2
+        \itemR ``This will be a short and superficial review because my intended subreferee dropped out\ldots''
+      \end{itemize}
+    \item Authors opt-in to transparent peer review; reviews shown along with paper, assigned DOIs
+    \item I'm conflicted. Good idea, but I'm not sure about having my reviews available to all\ldots
+  \end{fullpageitemize}
+\end{frame}
+
+\begin{frame}[fragile]{The Journal of Open Source Software: when collaborative open source meets peer review\\ {\small Arfon Smith}}
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{images/joss.jpg}
+  \end{center}
+
+  \begin{fullpageitemize}
+    \item Open access journal about open-source software
+      \begin{itemize}
+        \itemR Short, citable papers
+        \itemR Quality control on both software \emph{and} paper
+      \end{itemize}
+
+    \item Review process open, on GitHub
+      \begin{itemize}
+        \itemR Facilitated by a bot called \verb+@whedon+ :)
+      \end{itemize}
+
+    \item In my opinion, the best talk of the conference
+  \end{fullpageitemize}
+
+\end{frame}
+
+\framecard{{\color{white}\bigtext{Takeaways}}}
+
+\begin{frame}{Takeaways}
+
+  \begin{fullpageitemize}
+\item {\large {\textbf{Takeaway 1: } Embrace persistent IDs}}
+      \begin{itemize}
+        \itemR ORCID: Unique researcher identifier. Associates your work with you, even through name changes, etc.
+         % (Rendering is awful in LNCS, but no other negatives.)
+        \itemR DOIs: Not just for papers, but for \emph{any} sort of digital object
+      \end{itemize}
+      \vspace{0.5em}
+      \pause
+
+    \item { \large {\textbf{Takeaway 2: }} Follow correct software citation practices }
+      \begin{itemize}
+        \itemR Cite and give credit for essential software. Checklists available
+        %\itemR If authoring software, provide a way for people to cite your software
+        %\itemR Various checklists out there already
+      \end{itemize}
+      \vspace{0.5em}
+      \pause
+
+    \item { \large {\textbf{Takeaway 3: }} arXiv for preprints, not transient website links}
+      \begin{itemize}
+        \itemR People should be able to cite a specific \emph{version} of your paper
+      \end{itemize}
+      \vspace{0.5em}
+      \pause
+
+    \item {\large {\textbf{Takeaway 4: }} Archive and DOI your supplementary material!}
+      \begin{itemize}
+        \itemR Data / software artifacts are \emph{important parts of your output}
+        \itemR Archive them and get DOIs: use figshare / Zenodo for example
+      \end{itemize}
+      \vspace{0.5em}
+      \pause
+
+    \item { \large {\textbf{Takeaway 5: }} Open access is the future!}
+      \begin{itemize}
+        \itemR Closed access papers are not REF-able. It's on its way out.
+        \itemR Still some confusion as to sustainability.
+      \end{itemize}
+  \end{fullpageitemize}
+\end{frame}
+
+\begin{frame}{Practicing, preaching, and all that\ldots}
+  \begin{center}
+  \only<1>{
+    \includegraphics[width=0.65\textwidth]{images/arxiv.png}
+  }
+  \only<2>{
+    \includegraphics[width=0.5\textwidth]{images/orcid.png}
+  }
+  \only<3>{
+    \includegraphics[width=0.5\textwidth]{images/figshare-citation.png}
+    \vspace{2em}
+
+    \includegraphics[width=0.65\textwidth]{images/figshare.png}
+  }
+\end{center}
+\end{frame}
+
+\begin{frame}{Fin}
+  \begin{fullpageitemize}
+    \item FORCE conferences: Discussion of future of scholarly communication
+    \item Murrayfield conference centre is freezing, but conference was interesting
+    \item {\large \textbf{Takeaways:}}
+      \begin{itemize}
+        \item 1. Embrace persistent IDs
+        \item 2. Follow correct software citation practices
+        \item 3. ArXiv your preprints
+        \item 4. Archive your supplementary material
+        \item 5. Open access is the future!
+      \end{itemize}
+  \end{fullpageitemize}
+
+  \begin{center}
+    Thanks! Questions?
+  \end{center}
+\end{frame}
 
 \end{document}
